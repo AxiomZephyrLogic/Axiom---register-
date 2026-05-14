@@ -3,220 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axiom Zephyr | Register</title>
+    <title>Enlighten Tech</title>
     <style>
-        /* CSS: Making it look like Nivi's Design */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #2e004f 0%, #6a0dad 100%);
+            color: white;
+            font-family: 'Arial', sans-serif;
             display: flex;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+            justify-content: center;
+            min-height: 100vh;
             margin: 0;
         }
-        .card {
-            background: white;
+        .form-card {
+            background: rgba(255, 255, 255, 0.1);
             padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 320px;
-            border-top: 5px solid #D32F2F; /* UBA Red */
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
         }
-        h2 { color: #333; text-align: center; margin-bottom: 20px; }
-        .input-group { margin-bottom: 15px; }
-        label { display: block; font-size: 14px; margin-bottom: 5px; color: #666; }
+        h1 { font-size: 2rem; margin-bottom: 5px; }
+        p { color: #d1a3ff; margin-bottom: 25px; font-weight: bold; }
         input {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-sizing: border-box; /* Crucial for mobile responsiveness */
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            outline: none;
         }
         button {
             width: 100%;
-            padding: 12px;
-            background-color: #D32F2F; /* UBA Red */
+            padding: 15px;
+            background: #25D366; /* WhatsApp Green */
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
+            font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
+            margin-top: 10px;
         }
-        button:hover { background-color: #b71c1c; }
+        button:hover { background: #128C7E; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h2>Create Account</h2>
-        <form>
-            <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter your name">
-            </div>
-            <div class="input-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="email@example.com">
-            </div>
-            <div class="input-group">
-                <label>Password</label>
-                <input type="password" placeholder="••••••••">
-            </div>
-            <button type="button" onclick="alert('Reality check: Frontend works! Next, we connect Python.')">
-                Register
-            </button>
-        </form>
-    </div>
+<div class="form-card">
+    <h1>Enlighten Tech</h1>
+    <p>Enlightened Take Action</p>
+    
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="service" placeholder="What service do you need?" required>
+    
+    <button onclick="sendToWhatsApp()">Send to WhatsApp</button>
+</div>
+
+<script>
+    function sendToWhatsApp() {
+        const name = document.getElementById('name').value;
+        const service = document.getElementById('service').value;
+        
+        // REPLACE THE NUMBER BELOW WITH YOUR ACTUAL WHATSAPP NUMBER
+        const phoneNumber = "2349020137156"; 
+        
+        const message = "Hello Enlighten Tech! My name is " + name + ". I am interested in: " + service;
+        const url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        
+        window.open(url, '_blank');
+    }
+</script>
 
 </body>
-      </html>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axiom Zephyr | Register</title>
+    <title>Enlighten Tech</title>
     <style>
-        /* CSS: Making it look like Nivi's Design */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #2e004f 0%, #6a0dad 100%);
+            color: white;
+            font-family: 'Arial', sans-serif;
             display: flex;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+            justify-content: center;
+            min-height: 100vh;
             margin: 0;
         }
-        .card {
-            background: white;
+        .form-card {
+            background: rgba(255, 255, 255, 0.1);
             padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 320px;
-            border-top: 5px solid #D32F2F; /* UBA Red */
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
         }
-        h2 { color: #333; text-align: center; margin-bottom: 20px; }
-        .input-group { margin-bottom: 15px; }
-        label { display: block; font-size: 14px; margin-bottom: 5px; color: #666; }
+        h1 { font-size: 2rem; margin-bottom: 5px; }
+        p { color: #d1a3ff; margin-bottom: 25px; font-weight: bold; }
         input {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-sizing: border-box; /* Crucial for mobile responsiveness */
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            outline: none;
         }
         button {
             width: 100%;
-            padding: 12px;
-            background-color: #D32F2F; /* UBA Red */
+            padding: 15px;
+            background: #25D366; /* WhatsApp Green */
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
+            font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
+            margin-top: 10px;
         }
-        button:hover { background-color: #b71c1c; }
+        button:hover { background: #128C7E; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h2>Create Account</h2>
-        <form>
-            <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter your name">
-            </div>
-            <div class="input-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="email@example.com">
-            </div>
-            <div class="input-group">
-                <label>Password</label>
-                <input type="password" placeholder="••••••••">
-            </div>
-            <button type="button" onclick="alert('Reality check: Frontend works! Next, we connect Python.')">
-                Register
-            </button>
-        </form>
-    </div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axiom Zephyr | Register</title>
-    <style>
-        /* CSS: Making it look like Nivi's Design */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 320px;
-            border-top: 5px solid #D32F2F; /* UBA Red */
-        }
-        h2 { color: #333; text-align: center; margin-bottom: 20px; }
-        .input-group { margin-bottom: 15px; }
-        label { display: block; font-size: 14px; margin-bottom: 5px; color: #666; }
-        input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-sizing: border-box; /* Crucial for mobile responsiveness */
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #D32F2F; /* UBA Red */
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        button:hover { background-color: #b71c1c; }
-    </style>
-</head>
-<body>
+<div class="form-card">
+    <h1>Enlighten Tech</h1>
+    <p>Enlightened Take Action</p>
+    
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="service" placeholder="What service do you need?" required>
+    
+    <button onclick="sendToWhatsApp()">Send to WhatsApp</button>
+</div>
 
-    <div class="card">
-        <h2>Create Account</h2>
-        <form>
-            <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="Enter your name">
-            </div>
-            <div class="input-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="email@example.com">
-            </div>
-            <div class="input-group">
-                <label>Password</label>
-                <input type="password" placeholder="••••••••">
-            </div>
-            <button type="button" onclick="alert('Reality check: Frontend works! Next, we connect Python.')">
-                Register
-            </button>
-        </form>
-    </div>
+<script>
+    function sendToWhatsApp() {
+        const name = document.getElementById('name').value;
+        const service = document.getElementById('service').value;
+        
+        // REPLACE THE NUMBER BELOW WITH YOUR ACTUAL WHATSAPP NUMBER
+        const phoneNumber = "2340000000000"; 
+        
+        const message = "Hello Enlighten Tech! My name is " + name + ". I am interested in: " + service;
+        const url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        
+        window.open(url, '_blank');
+    }
+</script>
 
 </body>
-  </html>
-  
-</body>
-              </html>
+</html>
