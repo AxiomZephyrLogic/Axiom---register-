@@ -67,7 +67,7 @@
         const name = document.getElementById('name').value;
         const service = document.getElementById('service').value;
         
-        // REPLACE THE NUMBER BELOW WITH YOUR ACTUAL WHATSAPP NUMBER
+
         const phoneNumber = "2349020137156"; 
         
         const message = "Hello Enlighten Tech! My name is " + name + ". I am interested in: " + service;
