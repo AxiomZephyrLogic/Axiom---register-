@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enlighten Tech</title>
+    <title>Enlighten Tech
+𝙰𝚇𝙸𝙾𝙼 𝚉𝙴𝙿𝙷𝚈𝚁</title>
     <style>
         body {
             background: linear-gradient(135deg, #2e004f 0%, #6a0dad 100%);
@@ -57,7 +58,7 @@
     <p>Enlightened Take Action</p>
     
     <input type="text" id="name" placeholder="Your Name" required>
-    <input type="text" id="service" placeholder="What service do you need?" required>
+    <input type="text" id="service"placeholder="Do you want to get enlightened ?" required>
     
     <button onclick="sendToWhatsApp()">Send to WhatsApp</button>
 </div>
@@ -70,7 +71,7 @@
 
         const phoneNumber = "2349020137156"; 
         
-        const message = "Hello Enlighten Tech! My name is " + name + ". I am interested in: " + service;
+        const message = "Hello Enlighten Tech! My name is " + name + ". I want to be enlightened on: " + service;
         const url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
         
         window.open(url, '_blank');
