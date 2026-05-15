@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlighten Tech</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #2e004f 0%, #6a0dad 100%);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 { font-size: 2rem; margin-bottom: 5px; }
+        p { color: #d1a3ff; margin-bottom: 25px; font-weight: bold; }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #25D366; /* WhatsApp Green */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover { background: #128C7E; }
+    </style>
+</head>
+<body>
+
+<div class="form-card">
+    <h1>Enlighten Tech</h1>
+    <p>Enlightened Take Action</p>
+    
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="service" placeholder="What service do you need?" required>
+    
+    <button onclick="sendToWhatsApp()">Send to WhatsApp</button>
+</div>
+
+<script>
+    function sendToWhatsApp() {
+        const name = document.getElementById('name').value;
+        const service = document.getElementById('service').value;
+        
+
+        const phoneNumber = "2349020137156"; 
+        
+        const message = "Hello Enlighten Tech! My name is " + name + ". I am interested in: " + service;
+        const url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        
+        window.open(url, '_blank');
+    }
+</script>
+
+</body>
+</html>
